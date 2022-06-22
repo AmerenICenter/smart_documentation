@@ -1,20 +1,20 @@
-.. calculator documentation master file, created by
-   sphinx-quickstart on Tue Jun 21 15:41:25 2022.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
 
-Welcome to calculator's documentation!
-======================================
+Welcome to Calculator
+===================================
+
+Calculator is a Python library for people who like to do mathematics.
+
+Check out the :doc:`usage` section for further information, including how to
+:ref:`install <installation>` the project.
+
+Contents
+--------
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
 
+   usage
+   api
 
+.. note::
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   This project is under active development.

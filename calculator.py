@@ -14,37 +14,37 @@ def subtract(a, b):
     """
     Subtracts two numbers.
 
-    :param kind: two numbers to be added.
+    :param kind: two numbers to be subtracted.
     :type kind: float, float.
     :raise calculator.IncompatibleTypes: If the kind is invalid.
-    :return: sum of two numbers.
+    :return: subtraction of two numbers.
     :rtype: float
     """
     return a - b
 
 def multiply(a, b):
     """
-    Adds two numbers.
+    Multiplies two numbers.
 
-    :param kind: two numbers to be added.
+    :param kind: two numbers to be multiplied.
     :type kind: float, float.
     :raise calculator.IncompatibleTypes: If the kind is invalid.
-    :return: sum of two numbers.
+    :return: multiplication of two numbers.
     :rtype: float
     """
     return a * b
 
 def divide(a, b):
     """
-    Adds two numbers.
+    Divides two numbers.
 
-    :param kind: two numbers to be added.
+    :param kind: two numbers to be divided.
     :type kind: float, float.
     :raise calculator.IncompatibleTypes: If the kind is invalid.
-    :return: sum of two numbers.
+    :return: division of two numbers.
     :rtype: float
     """
-    return a + b
+    return a / b
 
 class IncompatibleTypes(Exception):
     """Raised if the two operands are incompatible."""

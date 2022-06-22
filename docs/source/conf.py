@@ -11,14 +11,16 @@
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
 
+import pathlib
 import os
 import sys
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), './'))
+sys.path.insert(0, pathlib.Path(__file__).parents[2].resolve().as_posix())
 from load_config import instance
 
 # -- Project information -----------------------------------------------------
 
-project = instance.name
+project = instance.project_name
 author = instance.first_name + " " + instance.last_name
 copyright = instance.year + ", " + author
 
@@ -32,6 +34,9 @@ release = '0.1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'sphinx.ext.duration',
+    'sphinx.ext.doctest',
+    'sphinx.ext.autodoc',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -48,7 +53,7 @@ exclude_patterns = []
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-# print(project)
+
 html_theme = instance.theme
 
 # Add any paths that contain custom static files (such as style sheets) here,
