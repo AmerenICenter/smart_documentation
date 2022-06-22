@@ -56,12 +56,14 @@ write(usage_file_name, 'a', usage)
 
 api_file_name = 'api.rst'
 
-# print(instance.docs[0])
-
 section_names = [list(instance.docs[0].keys())[0], list(instance.docs[1].keys())[0]]
 function_names = list(instance.docs[0].values())[0]
 print(function_names)
-api_text = ""
+api_text = """
+API
+*********
+
+"""
 for name in function_names:
     api_text += ('.. autofunction:: calculator.' + str(name) + "\n")
 
