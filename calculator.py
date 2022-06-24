@@ -10,6 +10,8 @@ def add(a, b):
     """
     return a + b
 
+
+
 def subtract(a, b):
     """
     Subtracts two numbers.
@@ -22,6 +24,8 @@ def subtract(a, b):
     """
     return a - b
 
+
+
 def multiply(a, b):
     """
     Multiplies two numbers.
@@ -33,6 +37,8 @@ def multiply(a, b):
     :rtype: float
     """
     return a * b
+
+
 
 def divide(a, b):
     """
