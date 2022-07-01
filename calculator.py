@@ -10,6 +10,7 @@ def add(a, b):
     """
     return a + b
 
+
 def subtract(a, b):
     """
     Subtracts two numbers.
@@ -21,6 +22,7 @@ def subtract(a, b):
     :rtype: float
     """
     return a - b
+
 
 def multiply(a, b):
     """
@@ -34,6 +36,7 @@ def multiply(a, b):
     """
     return a * b
 
+
 def divide(a, b):
     """
     Divides two numbers.
@@ -45,6 +48,7 @@ def divide(a, b):
     :rtype: float
     """
     return a / b
+
 
 class IncompatibleTypes(Exception):
     """Raised if the two operands are incompatible."""
