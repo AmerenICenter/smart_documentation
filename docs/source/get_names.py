@@ -16,10 +16,10 @@ for doc in docs:
     function_names = doc[file_name]
     formatted_func_names = []
     for name in function_names:
-        formatted_func_names.append('.. autofunction:: calculator.' + str(name))
+        formatted_func_names.append('.. autofunction::' + str(file_name) + '.' + str(name))
     number_of_files += 1
     func_results[file_name] = formatted_func_names
     file_names.append(file_name + '.rst')
 
-# print(func_results)
+print(func_results)
 # print(number_of_files)

@@ -29,7 +29,9 @@ cd docs, make html - every other time: on future Git pushes
 ```
 virtualenv venv
 venv\Scripts\activate
-python initial_write.py
+python docs/source/get_names.py
+python docs/source/make_api.py
+python docs/source/initial_write.py
 cd docs, make html
 ```
 

@@ -1,8 +1,7 @@
-
 API
 *********
 
-.. autofunctions:: calculator.add
-.. autofunctions:: calculator.subtract
-.. autofunctions:: calculator.multiply
-.. autofunctions:: calculator.divide
+.. autofunction:: calculator.add
+.. autofunction:: calculator.subtract
+.. autofunction:: calculator.multiply
+.. autofunction:: calculator.divide

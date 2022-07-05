@@ -13,7 +13,8 @@ Contents
 .. toctree::
 
    usage
-   api
+   basic_operations
+   advanced_operations
 
 .. note::
 

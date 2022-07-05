@@ -5,30 +5,13 @@ with open('../../config.json', 'r') as myfile:
 
 object = json.loads(data)[0]
 
-# item -  module_name: ([operations], [errors])
-# result: list[item]
 def parse():
     data = object['sections']
-    # print(data)
     res = []
     for key in data:
-        # print(data[key]['errors'])
-        # print(data[key])
-        # d = {}
-        # print(data[key]['errors'])
         for other_key in data[key]:
              res.append({other_key: data[key][other_key]})
-        # t = [data[key]['operations'], data[key]['errors']]
-        # res.append({key: t})
-        # print(data[key]['operations'])
-        # d[data[key]['operations']] = ("default", "text")
-        # res.append(d)
-        # d = {key: t}
-        # res.append(d)
-        # res(data[key]) = ('default', 'text')
-    # print(res)
     return (res)
-
 class Project:
     def __init__(self):
         self.project_name = object['project_name']
@@ -42,7 +25,5 @@ class Project:
         else:
             self.active = False
         self.docs = parse()
-
-# parse()
 
 instance = Project()

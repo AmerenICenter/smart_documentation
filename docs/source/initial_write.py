@@ -1,5 +1,6 @@
 from load_config import instance
-# from modules import file_write
+from modules import file_write
+import get_names
 
 index_file_name = 'index.rst'
 index = f"""
@@ -17,8 +18,10 @@ Contents
 .. toctree::
 
    usage
-   api
 """
+
+for file_name in get_names.file_names:
+    index += "   " + file_name[:-4] + "\n"
 
 usage_file_name = 'usage.rst'
 usage = f"""
@@ -46,27 +49,5 @@ active = """
 if instance.active:
     index += active
 
-# def write(file_name, mode, text):
-#     open(file_name, "w").close()
-#     f = open(file_name, mode)
-#     f.write(text)
-#     f.close()
-
-write(index_file_name, 'a', index)
-write(usage_file_name, 'a', usage)
-
-# api_file_name = 'api.rst'
-
-# section_names = [list(instance.docs[0].keys())[0], list(instance.docs[1].keys())[0]]
-# function_names = list(instance.docs[0].values())[0]
-# print(function_names)
-# api_text = """
-# API
-# *********
-
-# """
-# for name in function_names:
-#     api_text += ('.. autofunction:: calculator.' + str(name) + "\n")
-
-# print(api_text)
-# write(api_file_name, 'a', api_text)
+file_write.write(index_file_name, 'a', index)
+file_write.write(usage_file_name, 'a', usage)
