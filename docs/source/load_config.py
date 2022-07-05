@@ -43,6 +43,6 @@ class Project:
             self.active = False
         self.docs = parse()
 
-parse()
+# parse()
 
 instance = Project()

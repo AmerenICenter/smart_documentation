@@ -1,4 +1,5 @@
 from load_config import instance
+# from modules import file_write
 
 index_file_name = 'index.rst'
 index = f"""
@@ -45,52 +46,27 @@ active = """
 if instance.active:
     index += active
 
-def write(file_name, mode, text):
-    open(file_name, "w").close()
-    f = open(file_name, mode)
-    f.write(text)
-    f.close()
+# def write(file_name, mode, text):
+#     open(file_name, "w").close()
+#     f = open(file_name, mode)
+#     f.write(text)
+#     f.close()
 
 write(index_file_name, 'a', index)
 write(usage_file_name, 'a', usage)
 
-api_file_name = 'api.rst'
+# api_file_name = 'api.rst'
 
-section_names = [list(instance.docs[0].keys())[0], list(instance.docs[1].keys())[0]]
-function_names = list(instance.docs[0].values())[0]
-print(function_names)
-api_text = """
-API
-*********
-
-"""
-for name in function_names:
-    api_text += ('.. autofunction:: calculator.' + str(name) + "\n")
-
-print(api_text)
-write(api_file_name, 'a', api_text)
+# section_names = [list(instance.docs[0].keys())[0], list(instance.docs[1].keys())[0]]
+# function_names = list(instance.docs[0].values())[0]
+# print(function_names)
 # api_text = """
-# Creating recipes
-# ----------------
-# .. autofunction:: lumache.get_random_ingredients
-# .. autofunction:: lumache.get_random_ingredients
-# .. autofunction:: lumache.get_random_ingredients
-
-# .. autoexception:: lumache.InvalidKindError
+# API
+# *********
 
 # """
+# for name in function_names:
+#     api_text += ('.. autofunction:: calculator.' + str(name) + "\n")
 
-
-# Creating recipes
-# ----------------
-
-# To retrieve a list of random ingredients,
-# you can use the ``lumache.get_random_ingredients()`` function:
-
-# .. autofunction:: lumache.get_random_ingredients
-
-# The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-# or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-# will raise an exception.
-
-# .. autoexception:: lumache.InvalidKindError
+# print(api_text)
+# write(api_file_name, 'a', api_text)

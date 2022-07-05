@@ -1,6 +1,6 @@
 [
   {
-    "project_name": "calculator",
+    "project_name": "Calculator",
     "pip_package": "calculator",
     "theme": "furo",
     "first_name": "Jacob",
@@ -10,8 +10,8 @@
     "active": 1,
     "sections": {
       "calculator": {
-        "operations": ["add", "subtract", "multiply", "divide"],
-        "errors": ["IncompatibleTypes"]
+        "basic_operations": ["add", "subtract", "multiply", "divide"],
+        "advanced_operations": ["sin", "cos", "tan"]
       }
     }
   }

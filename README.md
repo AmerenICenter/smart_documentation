@@ -1,24 +1,40 @@
 # Smart Documentation
 
-### Manual Commands:
+Smart Documentation hopes to develop a pipeline to automatically generate documentation for Python libraries.
+
+### Technologies:
+
+- Python.
+
+### Python Libraries
+
+- [Sphinx]()
+- Virtualenv
+
+### Run only once:
+
+```
+virtualenv venv: create virtual environment
+venv\Scripts\activate: activate it
+python -m pip install sphinx: install sphinx
+sphinx-build --version: check the version? (not needed?)
+sphinx-quickstart docs: create new Sphinx app (answer the default questions)
+sphinx-build -b html docs/source/ docs/build/html: initial build
+python docs/source/initial_write.py: run this to populate index.html file
+cd docs, make html - every other time: on future Git pushes
+```
+
+### Run every time after the first:
 
 ```
 virtualenv venv
 venv\Scripts\activate
-python -m pip install sphinx
-sphinx-build --version
-sphinx-quickstart docs
-sphinx-build -b html docs/source/ docs/build/html - first time
-cd docs, make html - every other time
-run python initial_write.py - too
+python initial_write.py
+cd docs, make html
 ```
-
-### Commands to be run:
-
-- setup virtualenv
-- pip install all the built-in themes in virtualenv
 
 ### tasks
 
 - make another make file which runs all the commands.
--
+- run on auto git push?
+- how to document classes/methods in classes/ and also errors
