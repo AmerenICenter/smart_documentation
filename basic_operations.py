@@ -9,7 +9,7 @@ def subtract(a, b):
     Subtracts two numbers.
 
     :param kind: two numbers to be subtracted.
-    :type kind: float, float.
+    :type kind: float, float
     :raise calculator.IncompatibleTypes: If the kind is invalid.
     :return: subtraction of two numbers.
     :rtype: float
@@ -21,7 +21,7 @@ def multiply(a, b):
     Multiplies two numbers.
 
     :param kind: two numbers to be multiplied.
-    :type kind: float, float.
+    :type kind: float, float
     :raise calculator.IncompatibleTypes: If the kind is invalid.
     :return: multiplication of two numbers.
     :rtype: float
@@ -33,7 +33,7 @@ def divide(a, b):
     Divides two numbers.
 
     :param kind: two numbers to be divided.
-    :type kind: float, float.
+    :type kind: float, float
     :raise calculator.IncompatibleTypes: If the kind is invalid.
     :return: division of two numbers.
     :rtype: float

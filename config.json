@@ -1,6 +1,6 @@
 [
   {
-    "project_name": "Calculator",
+    "project_name": "calculator",
     "pip_package": "calculator",
     "theme": "furo",
     "first_name": "Jacob",
