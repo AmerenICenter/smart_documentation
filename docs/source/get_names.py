@@ -1,3 +1,6 @@
+import sys
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../../project'))
 from load_config import instance
 
 # returns a dictionary with everything being documented in this project:

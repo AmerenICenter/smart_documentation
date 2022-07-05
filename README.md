@@ -39,4 +39,7 @@ cd docs, make html
 
 - make another make file which runs all the commands.
 - run on auto git push?
-- how to document classes/methods in classes/ and also errors
+- how to document classes/methods in classes/ and also errors (in addition to funcs)
+- extract func names/etc directly from the files located in... some folder?
+
+### Files

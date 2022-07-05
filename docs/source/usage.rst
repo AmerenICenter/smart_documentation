@@ -11,4 +11,4 @@ To use Calculator, first install it using `pip <https://pip.pypa.io/en/stable/>`
 
 .. code-block:: console
 
-   (.venv) $ pip install Calculator
+   (.venv) $ pip install calculator
