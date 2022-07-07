@@ -13,8 +13,9 @@ Contents
 .. toctree::
 
    usage
-   basic_operations
    advanced_operations
+   basic_operations
+   math
 
 .. note::
 

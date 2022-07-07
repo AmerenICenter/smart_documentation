@@ -41,4 +41,36 @@ res = {}
 for file_path in python_file_paths:
     res[file_path] = (find_methods_in_python_file(file_path))
 
-print(res)
+config_res = {}
+
+for key in res:
+    index = (key.rfind("\\")) + 1
+    config_res[key[index:-3]] = res[key]
+
+print(config_res)
+
+del config_res['load_config']
+
+name = "calculator"
+
+# This will be the dictionary that determines our entire sphinx app:
+config = {
+    "project_name": name,
+    "pip_package": name,
+    "theme": "furo",
+    "first_name": "Jacob",
+    "last_name": "Chang",
+    "year": "2022",
+    "desc": "Calculator is a Python library for people who like to do mathematics.",
+    "active": 1,
+    "sections": {
+      name: config_res
+    }
+}
+
+import json
+
+jsonString = json.dumps([config])
+jsonFile = open("config.json", "w")
+jsonFile.write(jsonString)
+jsonFile.close()

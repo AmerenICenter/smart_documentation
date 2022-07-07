@@ -5,11 +5,8 @@ Smart Documentation hopes to develop a pipeline to automatically generate docume
 ### Technologies:
 
 - Python.
-
-### Python Libraries
-
-- [Sphinx]()
-- Virtualenv
+- [Sphinx]().
+- [Virtualenv]().
 
 ### Run only once:
 
@@ -41,6 +38,8 @@ cd docs, make html
 - run on auto git push?
 - how to document classes/methods in classes/ and also errors (in addition to funcs)
 - extract func names/etc directly from the files located in... some folder?
+- does not work for nested py file .
+- autofunction, autoclass, etc.
 
 ### Code
 
