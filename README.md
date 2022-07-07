@@ -42,4 +42,7 @@ cd docs, make html
 - how to document classes/methods in classes/ and also errors (in addition to funcs)
 - extract func names/etc directly from the files located in... some folder?
 
-### Files
+### Code
+
+- The project to be documented is located in the `project` root directory.
+- Automatically, all files with extension `.py` shall be included into the docs.

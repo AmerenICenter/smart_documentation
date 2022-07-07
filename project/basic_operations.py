@@ -1,6 +1,6 @@
 def add(a, b) -> int:
     """
-    Adds two numbers (test).
+    Adds two numbers.
     """
     return a + b
 
