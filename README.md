@@ -29,6 +29,7 @@ venv\Scripts\activate
 python docs/source/get_names.py
 python docs/source/make_api.py
 python docs/source/initial_write.py
+python populate_config.py
 cd docs, make html
 ```
 
@@ -38,10 +39,11 @@ cd docs, make html
 - run on auto git push?
 - how to document classes/methods in classes/ and also errors (in addition to funcs)
 - extract func names/etc directly from the files located in... some folder?
-- does not work for nested py file .
+- does not work for nested py file . ( all python files must be in the root directory)
 - autofunction, autoclass, etc.
+- put name of file in the doc site for each page
 
-### Code
+### Functionality
 
 - The project to be documented is located in the `project` root directory.
-- Automatically, all files with extension `.py` shall be included into the docs.
+- At the moment, all files with extension `.py` within the top level of the `project` folder shall be included into the docs.

@@ -1,5 +1,5 @@
 math 
 ********
-.. autofunction:: nested/math.a
-.. autofunction:: nested/math.b
-.. autofunction:: nested/math.c
+.. autofunction:: math.a
+.. autofunction:: math.b
+.. autofunction:: math.c

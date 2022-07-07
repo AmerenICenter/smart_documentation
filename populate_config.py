@@ -1,17 +1,3 @@
-# gets all the files in the 'project' directory
-
-# import glob, os
-# os.chdir("project")
-
-# file_names = []
-
-# for file in glob.glob("*.py"):
-#     file_names.append(file)
-
-# # function_names = [func for func in dir(commands) if not func.startswith('__')]
-
-# print(file_names)
-
 import os
 import ast
 
