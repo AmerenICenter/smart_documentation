@@ -26,7 +26,7 @@ settings = {
     "files": file_names
 }
 
-# writes our settings to the config.json file
+# writes our settings to the config.json file:
 jsonString = json.dumps([settings])
 jsonFile = open("config.json", "w")
 jsonFile.write(jsonString)
