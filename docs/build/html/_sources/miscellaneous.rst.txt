@@ -1,0 +1,3 @@
+.. automodule:: project.miscellaneous
+    :members:
+    
