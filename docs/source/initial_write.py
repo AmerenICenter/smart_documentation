@@ -28,7 +28,9 @@ Contents
 """
 
 for file_name in instance.files:
-    index += "   " + file_name[:-3] + "\n"
+    i = file_name.rfind('.')
+    plain_name = (file_name[i+1:])
+    index += "   " + plain_name + "\n"
 
 usage_file_name = 'usage.rst'
 usage = f"""
@@ -66,9 +68,12 @@ write(index_file_name, 'a', index)
 write(usage_file_name, 'a', usage)
 
 for file_name in instance.files:
-    name = file_name[:-3]
-    text = f""".. automodule:: project.{name}
+    # name = file_name[:-3]
+    text = f""".. automodule:: {file_name}
     :members:
     """
+
+    index = file_name.rfind('.')
+    plain_name = (file_name[index+1:])
     
-    write(name + '.rst', 'a', text)
+    write(plain_name + '.rst', 'a', text)

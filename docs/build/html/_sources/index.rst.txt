@@ -14,7 +14,10 @@ Contents
 
    usage
    basic_operations
+   load_config
    trigonometry
+   person
+   hello
 
 .. note::
 

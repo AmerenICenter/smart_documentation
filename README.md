@@ -35,6 +35,8 @@ cd docs, make html
 ### Tasks
 
 - run commands on auto git push?
+- run multiple commands in one line
+- nested python files?
 
 ### Functionality
 
