@@ -4,41 +4,49 @@ Smart Documentation hopes to develop a pipeline to automatically generate docume
 
 ### Technologies:
 
-- [Python]().
-- [Sphinx]().
-- [Virtualenv]().
-- GitHub Actions
+- [Python](https://www.python.org/).
+- [Sphinx](https://www.sphinx-doc.org/en/master/).
+- [Virtualenv](https://virtualenv.pypa.io/en/latest/).
+- [GitHub Actions](https://github.com/features/actions).
+- [GitHub Pages](https://pages.github.com/).
 
-### Run only once:
-
-```
-virtualenv venv: create virtual environment
-venv\Scripts\activate: activate it
-python -m pip install sphinx: install sphinx
-sphinx-build --version: check the version? (not needed?)
-sphinx-quickstart docs: create new Sphinx app (answer the default questions)
-sphinx-build -b html docs/source/ docs/build/html: initial build
-python docs/source/initial_write.py: run this to populate index.html file
-cd docs, make html - every other time: on future Git pushes
-```
-
-### Run every time after the first:
+### First Time Usage
 
 ```
 virtualenv venv
 venv\Scripts\activate
+python -m pip install sphinx
+pip install -r requirements.txt
+sphinx-build --version
+sphinx-quickstart docs
+sphinx-build -b html docs/source/ docs/build/html
+create project/load_config.py
+create populate_config.py & customize settings
+create docs/source/initial_write.py
+```
+
+### Regular Usage
+
+```
+venv\Scripts\activate
+make changes to source code
 python populate_config.py
 python docs/source/initial_write.py
-cd docs, make html
+make html within docs folder
 ```
 
 ### Tasks
 
 - run commands on auto git push?
 - run multiple commands in one line
-- nested python files?
 
-### Functionality
+### Information
 
 - The project to be documented is located in the `project` root directory.
-- At the moment, all files with extension `.py` within the top level of the `project` folder shall be included into the docs. Does not work for nested python files yet.
+- Required files:
+
+```
+populate_config.py
+docs/source/initial_write.py
+project/load_config.py
+```

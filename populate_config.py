@@ -9,7 +9,8 @@ for path, subdirs, files in os.walk(project_name):
         current_file_path = os.path.join(path, name)
         if current_file_path[-2:] == "py":
             formatted_name = current_file_path.replace("\\", ".")[:-3]
-            file_names.append(formatted_name)
+            if not formatted_name.endswith('load_config'):
+                file_names.append(formatted_name)
 
 name = "calculator"
 

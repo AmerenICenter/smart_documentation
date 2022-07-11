@@ -68,7 +68,6 @@ write(index_file_name, 'a', index)
 write(usage_file_name, 'a', usage)
 
 for file_name in instance.files:
-    # name = file_name[:-3]
     text = f""".. automodule:: {file_name}
     :members:
     """
